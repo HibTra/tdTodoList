@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="form">
+        <form [formGroup]="authForm" [ngSubmit]="checkLogin()">
+            <label for="login">Login</label>
+            <input type="text" formControlName="login" id="login"><br>
+            <label for="pwd">Password</label>
+            <input type="password" formControlName="password" id="pwd"><br>
+        </form>
+        <div class="login">
+            <button class="btn btn-dark" type="submit">Login</button>
+        </div>
+    </div>
+</div>
+

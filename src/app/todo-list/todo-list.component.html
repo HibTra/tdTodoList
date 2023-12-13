@@ -1,0 +1,14 @@
+<div class="container">
+    <app-todo-detail [todo]="selectedTodo" *ngIf="this.ts.showTodoDialog"></app-todo-detail>
+    <app-todo-update [todo]="selectedTodo" *ngIf="this.ts.showUpdateDialog"></app-todo-update>
+    <app-template-driven-form *ngIf="this.ts.showAddDialog"></app-template-driven-form>
+<div *ngFor="let todo of todolist" class="todo">
+    {{todo.title}}
+    <div>
+    <fa-icon [icon]="faList" (click)="ts.showTodoDialog= true;selectTodo(todo)"></fa-icon>
+    <fa-icon [icon]="faPenToSquare" (click)="ts.showUpdateDialog= true;selectTodo(todo)"></fa-icon>
+    <fa-icon [icon]="faTrash" (click)="deleteTodo(todo)"></fa-icon>
+    </div>
+</div>
+</div>
+

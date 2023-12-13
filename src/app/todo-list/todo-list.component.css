@@ -1,0 +1,28 @@
+.todo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 0px;
+    border: none;
+    border-radius: 10px;
+    background-color:antiquewhite
+
+}
+.container{
+    padding: 0px;
+}
+
+fa-icon{
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+fa-icon:hover{
+    color: rgb(214, 37, 114);
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}

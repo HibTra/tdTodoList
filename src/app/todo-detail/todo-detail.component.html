@@ -1,0 +1,20 @@
+<div class="dialog">
+    <div class="header">
+        <h3>Task Detail</h3>
+        <button class="btn btn-close" (click)="this.ts.showTodoDialog=false"></button>
+    </div>
+    <hr/>
+    <div>
+        <p>
+            {{todo.title}} 
+        <span [ngStyle]="{'font-weight':'bold'}">Done </span> 
+        <fa-icon [icon]="faCheck" [ngClass]="todo.done?'done':'not-done'" (click)="updateDone(todo)"></fa-icon>
+        </p>
+        <p>
+            {{todo.date | date:'FallDate'}}
+        </p>
+        <p>
+            {{todo.description}}
+        </p>
+    </div>
+</div>
