@@ -29,12 +29,12 @@
       "done": false
     }
   ],
-  "users":[
+  "users": [
     {
-    "id": 1,
-    "login": "hiba@gmail.com",
-    "password": "bingo",
-    "token":"ffo33dde"
+      "id": 1,
+      "login": "hiba@gmail.com",
+      "password": "bingo",
+      "token": "ffo33dde"
     }
-    ]
+  ]
 }

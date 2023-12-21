@@ -4,12 +4,11 @@ import { UserService } from '../user.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-reactive-form',
-  templateUrl: './reactive-form.component.html',
-  styleUrls: ['./reactive-form.component.css']
+  selector: 'app-todo-reactive-form',
+  templateUrl: './todo-reactive-form.component.html',
+  styleUrl: './todo-reactive-form.component.css'
 })
-export class ReactiveFormComponent {
-
+export class TodoReactiveFormComponent {
   constructor(private fb: FormBuilder, private authS:UserService, private router: Router){}
 
   authForm = this.fb.group(
@@ -32,3 +31,5 @@ export class ReactiveFormComponent {
     })
   }
 }
+
+
