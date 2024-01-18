@@ -2,7 +2,7 @@
     <app-todo-detail [todo]="selectedTodo" *ngIf="this.ts.showTodoDialog"></app-todo-detail>
     <app-todo-update [todo]="selectedTodo" *ngIf="this.ts.showUpdateDialog"></app-todo-update>
     <app-template-driven-form *ngIf="this.ts.showAddDialog"></app-template-driven-form>
-<div *ngFor="let todo of todolist" class="todo">
+<div *ngFor="let todo of todolist" class="todo" appTodo [ngStyle]="{'border': todo | todo}">
     {{todo.title}}
     <div>
     <fa-icon [icon]="faList" (click)="ts.showTodoDialog= true;selectTodo(todo)"></fa-icon>

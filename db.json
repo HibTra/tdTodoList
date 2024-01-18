@@ -10,14 +10,14 @@
     {
       "id": 2,
       "title": "Designers",
-      "date": "2023-11-17",
+      "date": "2023-12-24",
       "description": "Call the design agency to finalize the models",
       "done": false
     },
     {
       "id": 3,
       "title": "Recruiters",
-      "date": "2023-11-20",
+      "date": "2023-12-24",
       "description": "Contact recruiters about the new position to be filled",
       "done": false
     },

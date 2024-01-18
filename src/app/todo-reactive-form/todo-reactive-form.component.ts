@@ -24,10 +24,12 @@ export class TodoReactiveFormComponent {
     .subscribe(result => {
       if(result.length){
         localStorage.setItem("token", result[0].token)
-        this.router.navigateByUrl('')
+        //window.location.reload()
+        this.router.navigateByUrl('todo-list')
+        
       }
       else
-         alert("Login ou password incorrectes")
+         alert("Login ou password incorrecte")
     })
   }
 }

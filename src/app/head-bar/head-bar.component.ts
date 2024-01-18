@@ -8,11 +8,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./head-bar.component.css']
 })
 export class HeadBarComponent {
+localS = localStorage.getItem("token");
 
   constructor(public ts: TodoService, private router: Router){}
 
   signOut(){
     localStorage.removeItem("token")
     this.router.navigateByUrl('/signIn')
+    window.location.reload()
   }
+
+ 
 }
